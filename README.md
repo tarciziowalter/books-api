@@ -1,66 +1,132 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Livros API
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este é um projeto Laravel que implementa uma API RESTful para Gerenciamento de Livros.
 
-## About Laravel
+## Descrição do Projeto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A API permite aos usuários realizar operações CRUD (Criar, Ler, Atualizar, Excluir) em uma entidade chamada "Livros" e "Autores". Cada livro possui um título, uma descrição e um autor.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Funcionalidades
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **CRUD de Livros:** Os usuários podem criar, ler, atualizar e excluir Livros.
+- **Listagem de Livros:** Os usuários podem visualizar todos os Livros existentes.
+- **Detalhes do Livro:** Os usuários podem visualizar os detalhes de um Livro específico.
+- **Atualização do Livro:** Os usuários podem atualizar os detalhes de um Livro existente.
+- **Exclusão do Livro:** Os usuários podem excluir uma Livro existente.
+- **CRUD de Autores:** Os usuários podem criar, ler, atualizar e excluir Autores.
+- **Listagem de Autores:** Os usuários podem visualizar todos os Autores existentes.
+- **Detalhes do Autor:** Os usuários podem visualizar os detalhes de um Autor específico.
+- **Atualização do Autor:** Os usuários podem atualizar os detalhes de um Autor existente.
+- **Exclusão do Autor:** Os usuários podem excluir um Autor existente.
 
-## Learning Laravel
+## Princípios SOLID
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Este projeto segue os princípios SOLID, um conjunto de diretrizes de design de software que visam tornar o código mais compreensível, flexível e fácil de manter. Aqui está como os princípios SOLID foram aplicados neste projeto:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **S (Single Responsibility Principle):** Cada classe tem uma única responsabilidade e um único motivo para mudar. Isso torna o código mais modular e fácil de entender.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **O (Open/Closed Principle):** O código é aberto para extensão, mas fechado para modificação. Isso significa que novas funcionalidades podem ser adicionadas sem alterar o código existente.
 
-## Laravel Sponsors
+- **L (Liskov Substitution Principle):** As classes derivadas podem ser substituídas por suas classes base sem afetar o comportamento do programa. Isso permite que o código seja mais flexível e extensível.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- **I (Interface Segregation Principle):** Interfaces específicas são preferíveis a interfaces gerais. Isso evita que as classes dependam de funcionalidades que não utilizam.
 
-### Premium Partners
+- **D (Dependency Inversion Principle):** As dependências são injetadas nas classes em vez de serem criadas dentro delas. Isso torna o código mais desacoplado e facilita a substituição de implementações.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+A aplicação desses princípios ajuda a garantir que o código seja mais modular, extensível e fácil de manter, promovendo boas práticas de desenvolvimento de software.
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Instalação
 
-## Code of Conduct
+1. Clone o repositório:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+git clone https://github.com/tarciziowalter/books-api.git
+```
 
-## Security Vulnerabilities
+2. Instale as dependências:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+composer install
+```
 
-## License
+3. Copie o arquivo .env.example para .env e configure as variáveis de ambiente, incluindo a conexão com o banco de dados.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+4. Gere uma nova chave de aplicativo:
+
+```bash
+php artisan key:generate
+```
+
+5. Execute as migrações do banco de dados para criar as tabelas necessárias:
+
+```bash
+php artisan migrate
+```
+
+6. Opcional: Se desejar, você pode adicionar dados fictícios ao banco de dados usando os seeders:
+
+```bash
+php artisan db:seed
+```
+
+7. Gerar a chave JWT
+
+```bash 
+php artisan jwt:secret
+```
+
+8. Inicie o servidor de desenvolvimento:
+
+```bash
+php artisan serve
+```
+
+## Uso
+
+Você pode usar o Postman ou qualquer outra ferramenta de cliente HTTP para enviar solicitações à API. Abaixo estão os endpoints disponíveis:
+
+- **POST /api/login:** Autenticação da aplicação
+- **POST /api/logout:** Logout da aplicação
+- **GET /api/books:** Retorna todas os livros.
+- **POST /api/books:** Cria um novo livro.
+- **GET /api/books/{id}:** Retorna os detalhes de um livro específico.
+- **PUT /api/books/{id}:** Atualiza os detalhes de um livro específico.
+- **DELETE /api/books/{id}:** Exclui um livro específico.
+- **GET /api/authors:** Retorna todos os autores.
+- **POST /api/authors:** Cria um novo autor.
+- **GET /api/authors/{id}:** Retorna os detalhes de um autor específico.
+- **PUT /api/authors/{id}:** Atualiza os detalhes de um autor específico.
+- **DELETE /api/authors/{id}:** Exclui um autor específico.
+
+Certifique-se de incluir os cabeçalhos `Authorization: Bearer {token}`, `Accept: application/json` em todas as solicitações para endpoints, exceto na rota login.
+
+
+## Tests/Feature
+
+Além disso, foram criados testes automatizados no diretório tests/Feature para garantir a integridade e a funcionalidade da aplicação. Estes testes podem ser executados  individualmente para verificar se todas as funcionalidades estão operando conforme o esperado.
+
+```bash
+php artisan test --filter test_authenticated_user_can_create_book
+php artisan test --filter test_authenticated_user_can_view_book_details
+php artisan test --filter test_authenticated_user_can_view_all_books
+php artisan test --filter test_authenticated_user_can_update_book
+php artisan test --filter test_authenticated_user_can_delete_book
+php artisan test --filter test_authenticated_user_can_create_author
+php artisan test --filter test_authenticated_user_can_view_author_details
+php artisan test --filter test_authenticated_user_can_view_all_authors
+php artisan test --filter test_authenticated_user_can_update_author
+php artisan test --filter test_authenticated_user_can_delete_author
+```
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você quiser melhorar este projeto, por favor, abra uma issue ou envie uma solicitação pull.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License.
+
+## Autor
+
+Este projeto foi desenvolvido por [Tarcízio Walter](https://github.com/tarciziowalter). Você pode entrar em contato com o autor por e-mail em [tarciziowalter@outlook.com](mailto:tarciziowalter@outlook.com) ou seguir no [LinkedIn](https://linkedin.com/in/tarciziowalter).
